@@ -19,7 +19,7 @@ public class ContractUtils {
     public static Contract DateFormat(Contract c,Date date){
         c.setDateFormatCreate(set.format(c.getDateCreate()));
         c.setDateFormatUpdate(set.format(c.getDateUpdate()));
-        long duration = date.getTime() - c.getDateCreate().getTime();
+        long duration = date.getTime() - c.getDateUpdate().getTime();
         int res = Integer.parseInt(String.valueOf(TimeUnit.MILLISECONDS.toDays(duration)));
         if(res >= 60){
             c.setActive(false);
