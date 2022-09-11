@@ -1,0 +1,12 @@
+.anchorPane{
+    -fx-background-color: #170101;
+}
+#label{
+    -fx-alignment:CENTER;
+    -fx-background-color: FFFFFF;
+}
+#idColumn, #numberColumn, #dateFormatCreateColumn,
+#dateFormatUpdateColumn,#activeColumn{
+    -fx-alignment:CENTER;
+}
+
